@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "考拉数据打点校验",
+  "description": "考拉数据打点校验插件",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "webRequest",
+    "*://rev.da.netease.com/__dam.gif?*"
+  ],
+  "icons": {
+    "16": "icon/icon_16.png",
+    "128": "icon/icon_128.png"
+  },
+  "browser_action": {
+    "default_icon": "icon/icon_16.png",
+    "default_title": "考拉数据打点校验"
+  },
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "content_scripts": [{
+    "matches": ["*://*/*"],
+    "js": ["js/dotting.js"]
+  }]
+}

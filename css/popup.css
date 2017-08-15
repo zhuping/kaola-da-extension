@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+} 
+
+html, body {
+  height: 100%;
+  font-family: monospace;
+  word-wrap: break-word;
+}
+
+#container {
+  white-space: pre;
+  margin: 70px 20px 20px 20px;
+}
+
+.top-controls {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 4;
+  box-shadow: 0 0 10px black;
+  background: #e9e9ea;
+  line-height: 50px;
+  text-align: center;
+}
+
+.top-controls .tips {
+  color: red;
+}
+
+.top-controls ul {
+  float: right;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.top-controls ul li {
+  display: block;
+  position: relative;
+  float: right;
+}
+
+.top-controls button {
+  width: 60px;
+  height: 28px;
+  line-height: 26px;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.top-controls button:focus {
+  outline: none;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.table tr th {
+  color: #999;
+  background: #fafafa;
+  height: 50px;
+}
+
+.table tr td {
+  color: #333;
+  height: 50px;
+  border-bottom: 1px solid #E6E6E6;
+  text-align: center;
+}
